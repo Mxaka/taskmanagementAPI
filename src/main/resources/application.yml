@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: taskmanagementAPI
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskmanagement
+    username: postgres
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  app:
+    jwtSecret:
+    jwtExpirationMs: 3600000
