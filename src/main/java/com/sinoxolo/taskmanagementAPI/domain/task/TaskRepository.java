@@ -1,4 +1,4 @@
 package com.sinoxolo.taskmanagementAPI.domain.task;
 
-public class TaskRepository {
+public interface TaskRepository {
 }
